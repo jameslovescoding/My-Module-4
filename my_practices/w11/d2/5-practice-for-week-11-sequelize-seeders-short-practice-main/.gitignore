@@ -1,0 +1,3 @@
+server/db/*.db
+server/.env
+test/db/test.db
