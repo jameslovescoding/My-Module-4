@@ -1,5 +1,9 @@
 DROP TABLE IF EXISTS friends;
 
+.head on
+
+.mode column
+
 CREATE TABLE friends (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     first_name VARCHAR(255) NOT NULL,
@@ -15,3 +19,12 @@ VALUES
   ('River', 'Song');
 
 SELECT * FROM friends;
+
+UPDATE friends
+SET first_name = 'Ryder'
+WHERE first_name = 'Ryan'
+AND last_name = 'Pond';
+
+SELECT * FROM friends
+WHERE first_name = 'Ryder'
+AND last_name = 'Pond';

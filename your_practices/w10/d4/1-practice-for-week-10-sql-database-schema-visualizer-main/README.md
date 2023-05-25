@@ -45,3 +45,17 @@ The result should look something like this:
 
 [dbdiagram.io]: https://dbdiagram.io/
 [result]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/module-04/week-10/practices/sql-diagram-practice-kids-toys.png
+
+```
+Table kids {
+  id int [PK]
+  name varchar [not null]
+  age int
+}
+
+Table toys {
+  id int [PK]
+  name varchar [not null]
+  kid_id int [ref: > kids.id]
+}
+```

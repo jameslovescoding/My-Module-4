@@ -1,5 +1,9 @@
 DROP TABLE IF EXISTS puppies;
 
+.head on
+
+.mode column
+
 CREATE TABLE puppies (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name VARCHAR(100),
@@ -21,3 +25,16 @@ VALUES
   (8, 'Jaxson', 0.4, 'Beagle', 19, 1),
   (9, 'Leinni', 1, 'Miniature Schnauzer', 25, 1),
   (10, 'Max', 1.6, 'German Shepherd', 65, 0);
+
+SELECT * FROM puppies;
+
+SELECT name FROM puppies;
+
+SELECT * FROM puppies where id = 5;
+
+SELECT * FROM puppies where microchipped = 1;
+
+SELECT * FROM puppies WHERE age_yrs >= 1;
+
+SELECT * FROM puppies
+WHERE age_yrs >= 1 AND weight_lbs >= 30;

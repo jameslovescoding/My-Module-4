@@ -1,11 +1,14 @@
 -- Tells SQLite to enforce foreign key restrictions
 PRAGMA foreign_keys = 1;
+
 DROP TABLE IF EXISTS albums;
 DROP TABLE IF EXISTS bands;
+
 CREATE TABLE bands (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name VARCHAR(100)
 );
+
 CREATE TABLE albums (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   title VARCHAR(100) NOT NULL,
@@ -36,4 +39,3 @@ VALUES ('The Falling Box', 1, 2015, 25000),
   ('The King River', 5, 2017, 85000),
   ('Under Water', 5, 2020, 106000),
   ('Another Fork', 5, 2021, 140000);
-  

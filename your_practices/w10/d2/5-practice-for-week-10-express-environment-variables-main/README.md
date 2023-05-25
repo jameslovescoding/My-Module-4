@@ -23,6 +23,8 @@ when running:
 Run `index.js` again, but this time with the `NODE_ENV` environment variable set
 to "production" and declared within the command-line.
 
+- NODE_ENV=production node index.js
+
 ## Part 2: Using a `.env` file
 
 The `app.js` file contains some boilerplate code for an Express server. However,
@@ -42,6 +44,8 @@ application runs with the configured environment variables.
 
 **Important Note**: You will need to `npm install` the appropriate node modules
 to use `dotenv`.
+
+- npm install dotenv dotenv-cli
 
 ## What you've learned
 
